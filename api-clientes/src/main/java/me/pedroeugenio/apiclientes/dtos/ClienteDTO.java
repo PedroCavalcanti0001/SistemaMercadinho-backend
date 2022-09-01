@@ -3,7 +3,7 @@ package me.pedroeugenio.apiclientes.dtos;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import me.pedroeugenio.apiclientes.resources.entities.Cliente;
+import me.pedroeugenio.apiclientes.entities.Cliente;
 
 import java.time.LocalDate;
 

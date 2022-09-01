@@ -3,7 +3,7 @@ package me.pedroeugenio.apiclientes.dtos;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import me.pedroeugenio.apiclientes.resources.entities.ClienteEndereco;
+import me.pedroeugenio.apiclientes.entities.ClienteEndereco;
 
 @Data
 @AllArgsConstructor
