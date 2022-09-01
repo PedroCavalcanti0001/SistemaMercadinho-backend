@@ -1,7 +1,13 @@
 package me.pedroeugenio.mercadinhos.apiprodutos.dtos;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import me.pedroeugenio.mercadinhos.apiprodutos.entities.Produto;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProdutoDTO {
 
     private long id;
@@ -17,45 +23,5 @@ public class ProdutoDTO {
         this.cor = produto.getCor();
         this.descricao = produto.getDescricao();
         this.estoque = new ProdutoEstoqueDTO(produto.getEstoque());
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public ProdutoEstoqueDTO getEstoque() {
-        return estoque;
-    }
-
-    public void setEstoque(ProdutoEstoqueDTO estoque) {
-        this.estoque = estoque;
     }
 }

@@ -1,10 +1,17 @@
 package me.pedroeugenio.mercadinhos.apiprodutos.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "tb_produtos_estoque")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProdutoEstoque {
 
     @Id
@@ -17,37 +24,4 @@ public class ProdutoEstoque {
     @MapsId
     @JoinColumn(name = "produto_id")
     private Produto produto;
-
-
-    public Long getProdutoId() {
-        return produtoId;
-    }
-
-    public void setProdutoId(Long produtoId) {
-        this.produtoId = produtoId;
-    }
-
-    public LocalDate getDataAlteracao() {
-        return dataAlteracao;
-    }
-
-    public void setDataAlteracao(LocalDate dataAlteracao) {
-        this.dataAlteracao = dataAlteracao;
-    }
-
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public Integer getQuantidade() {
-        return quantidade;
-    }
-
-    public void setQuantidade(Integer quantidade) {
-        this.quantidade = quantidade;
-    }
 }

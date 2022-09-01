@@ -1,9 +1,16 @@
 package me.pedroeugenio.mercadinhos.apiprodutos.entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_produtos")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Produto {
 
     @Id
@@ -16,44 +23,4 @@ public class Produto {
     @OneToOne(mappedBy = "produto", cascade = CascadeType.ALL)
     @PrimaryKeyJoinColumn
     private ProdutoEstoque estoque;
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public ProdutoEstoque getEstoque() {
-        return estoque;
-    }
-
-    public void setEstoque(ProdutoEstoque quantidade) {
-        this.estoque = quantidade;
-    }
 }
