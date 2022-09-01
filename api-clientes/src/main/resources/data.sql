@@ -1,0 +1,10 @@
+insert into tb_cliente(id, cpf, data_cadastro, limite_compras, nome) values(1, '318.580.860-60', '2001-10-10', 1000.5, 'Joao');
+insert into tb_cliente(id, cpf, data_cadastro, limite_compras, nome) values(2, '659.963.600-47','2001-10-10', 1000.5, 'Maria');
+insert into tb_cliente(id, cpf, data_cadastro, limite_compras, nome) values(3, '126.987.050-51', '2001-10-10', 1000.5, 'Antonio');
+insert into tb_cliente(id, cpf, data_cadastro, limite_compras, nome) values(4, '089.655.550-00', '2001-10-10', 1000.5, 'Ze');
+insert into tb_cliente(id, cpf, data_cadastro, limite_compras, nome) values(5, '692.879.810-60', '2001-10-10', 1000.5, 'Igor');
+insert into tb_endereco(cliente_id, bairro, cep, numero, rua, uf) values (1, 'terra azul', '56322-700', 32, 'rua oito', 'pe');
+insert into tb_endereco(cliente_id, bairro, cep, numero, rua, uf) values (2, 'terra preta', '56322-701', 33, 'rua nove', 'pe');
+insert into tb_endereco(cliente_id, bairro, cep, numero, rua, uf) values (3, 'terra amarela', '56322-400', 34, 'rua dez', 'pe');
+insert into tb_endereco(cliente_id, bairro, cep, numero, rua, uf) values (4, 'terra das coroas', '56322-200', 35, 'rua onze', 'pe');
+insert into tb_endereco(cliente_id, bairro, cep, numero, rua, uf) values (5, 'terra dos coroas', '56322-350', 36, 'rua oitenta', 'pe');
