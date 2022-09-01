@@ -1,0 +1,17 @@
+insert into tb_usuario(id, cpf, email, nome, senha) values(1, '318.580.860-60', 'teste@mail.com', 'joao', '12345');
+insert into tb_usuario(id, cpf, email, nome, senha) values(2, '659.963.600-47', 'teste2@mail.com', 'Mario', '12345');
+insert into tb_usuario(id, cpf, email, nome, senha) values(3, '126.987.050-51', 'teste3@mail.com', 'Andre', '12345');
+insert into tb_usuario(id, cpf, email, nome, senha) values(4, '089.655.550-00', 'teste4@mail.com', 'Paula', '12345');
+insert into tb_usuario(id, cpf, email, nome, senha) values(5, '692.879.810-60', 'teste5@mail.com', 'Milene', '12345');
+insert into tb_funcao(id, role_name) values(1, 'ADMIN');
+insert into tb_funcao(id, role_name) values(2, 'CAIXA');
+insert into tb_usuario_funcao(user_id, role_id) values(1, 1);
+insert into tb_usuario_funcao(user_id, role_id) values(2, 1);
+insert into tb_usuario_funcao(user_id, role_id) values(3, 2);
+insert into tb_usuario_funcao(user_id, role_id) values(4, 1);
+insert into tb_usuario_funcao(user_id, role_id) values(5, 1);
+insert into tb_endereco(usuario_id, bairro, cep, numero, rua, uf) values (1, 'terra azul', '56322-700', 32, 'rua oito', 'pe');
+insert into tb_endereco(usuario_id, bairro, cep, numero, rua, uf) values (2, 'terra preta', '56322-701', 33, 'rua nove', 'pe');
+insert into tb_endereco(usuario_id, bairro, cep, numero, rua, uf) values (3, 'terra amarela', '56322-400', 34, 'rua dez', 'pe');
+insert into tb_endereco(usuario_id, bairro, cep, numero, rua, uf) values (4, 'terra das coroas', '56322-200', 35, 'rua onze', 'pe');
+insert into tb_endereco(usuario_id, bairro, cep, numero, rua, uf) values (5, 'terra dos coroas', '56322-350', 36, 'rua oitenta', 'pe');
